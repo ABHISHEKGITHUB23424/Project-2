@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> ABI TRAVELS</title>
+<meta charset="UTF-8">
+<meta name="Keywords" content="HTML,CSS">
+<meta name="ABHISHEK",content="FOOD">
+<meta name="Viewport", content="width=device-width", initial-scale="1.0", maximum-scale="1.0", user-scaleable="no">
+<style>
+    body{
+        margin:0px;
+        padding:0px;
+        background-color:black;
+    }
+.ALLIGNMENT{
+    text-align: center;
+    color:white;
+    margin-top:100px;
+}
+.ALLIGNMENT1{
+    margin-top:100px;
+    margin-left:180px;
+    font-size:25px;
+}
+.ALLIGNMENT2{
+    margin-left:590px;
+    margin-top:-43px;
+    font-size:25px;
+
+}
+#SIZE{
+    height:40px;
+    width:240px;
+}
+#SIZE2{
+    height:40px;
+    width:240px;
+}
+.ALLIGNMENT3{
+    margin-left:240px;
+    font-size: 25px;
+}
+#SIZE3{
+    height:40px;
+    width:200px;
+}
+.ALLIGNMENT4{
+    margin-left:660px;
+    margin-top:-80px;
+    font-size:25px;
+}
+#SIZE4{
+    height:40px;
+    width:40px;
+
+}
+.ALLIGNMENT5{
+    margin-left: 225px;
+    font-size: 25px;
+}
+#SIZE5{
+   height: 40px;
+    width:400px;
+}
+.ALLIGNMENT6{
+    margin-left:200px;
+    font-size: 25px;
+}
+#SIZE6{
+    height:40px;
+    width:200px;   
+}
+.ALLIGNMENT12{
+    display:none;
+    background-color: black;
+    color:white;
+    height:20px;
+    width:40%;
+    overflow:none;
+    margin-top:-290px;
+    margin-left:300px;
+    border-radius: 50px;
+}
+.ALLIGNMENT12:hover{
+    background-color: white;
+    color:black;
+
+}
+.ALLIGNMENT7{
+    margin-left:-135px;
+    font-size: 25px;
+    margin-top:10px;
+}
+#SIZE7{
+    height:40px;
+    width:800px;
+}
+.forms{
+    display:flex;
+    justify-content: center;
+    height:650px;
+    width:1300px;
+    background-image:linear-gradient(grey,white,black);
+    margin-left: 90px;
+    margin-right: 30px;
+    margin-top:-100px;
+}
+.ALLIGNMENT8{
+    font-size: 25px;
+    border-radius: 10px;
+    margin-left:800px;
+}
+.ALLIGNMENT8:hover{
+    background-color:red;
+    cursor:pointer;
+}
+.ALLIGNMENT9{
+    margin-left:200px;
+    font-size: 25px;
+}
+#ALLIGNMENT10{
+    margin-top:-60px;
+    margin-left:315px;
+}
+#ALLIGNMENT11{
+    height: 40px;
+    width:205px;
+}
+.ALLIGNMENT13{
+    margin-top:5px;
+    margin-left:-320px;
+    margin-right:10px;
+    border-radius: 23px;
+}
+#f2{
+    display: flex;
+    height:180px;
+}
+#LET1{
+    margin-top:60px;
+}
+#SIZE8{
+    margin-left:5px;
+    border-radius: 25px;
+}
+</style>
+<script> 
+console.log("Warning message")
+     function F1() { 
+        document.getElementById("SIZE6").onmouseover= function() {document.getElementById("f2").style.display="flex";};
+    document.getElementById("SIZE6").onmouseout = function() {document.getElementById("f2").style.display="none"}};
+    function Submit() {
+        window.alert("Are you sure you wanted to submit the data??");
+    function Confirm() {
+        if (confirm("Did you sumbit all the data which is given below?")) {
+            alert("Okay your data has been submitted safely");
+        }
+    }
+    };
+    setTimeout(function(){
+        window.alert("Once you entered all the required data and press the submit button the data wiil be permanently stored in the database<br> ARE YOU OKAY WITH THAT?");},10000);
+
+</script>
+<body>
+    <h1 class="ALLIGNMENT">CREATE AN ACCOUNT</h1>
+    <div class="forms">
+    <form action="C:\Users\sarav\OneDrive\Documents\DATA FOR TRAVELS" method="get">
+        <div class="ALLIGNMENT1"><label for="First Name">First Name : </label>
+        <input id="SIZE" type="text" id="First Name : " name="First Name : " placeholder="First name" required></div>
+        <div class="ALLIGNMENT2"><label for="Last Name">Last Name : </label>
+        <input id="SIZE2" type="text" id="Last Name : " name="Last Name : " placeholder="Last Name" required></div>
+        <br>
+        </br>
+        <div class="ALLIGNMENT3"><label for="DOB">DOB : </label>
+        <input id="SIZE3" type="date" id="DOB" name="DOB" placeholder="dd/mm/yyyy" required></div>
+        <br>
+        </br>
+        <div class="ALLIGNMENT4"><label for="Age">Age : </label>
+        <input id="SIZE4" type="number" id="Age" name="Age" placeholder="00" required></div>
+        <br>
+        </br>
+        <div class="ALLIGNMENT5"><label for="email">E-mail : </label>
+        <input id="SIZE5" type="text" id="E-mail" name="E-mail" placeholder="xyz@abc.com" required></div>
+        <br>
+        </br>
+        <div class="ALLIGNMENT6"><label id="Hover4" for="Password" onclick="F1()">Password : </label>
+        <input onmouseover="F1()" id="SIZE6" type="text" id="Password" name="Password"placeholder="Password" required></div>
+        <h3 class="ALLIGNMENT9">Country : </h3>
+        <div id="ALLIGNMENT10"><select id="ALLIGNMENT11" name="Country"></div>
+            <option value="ch">Chennai</option>
+            <option value="hy">Hyderabad</option>
+        </select>
+        <br>
+    </br>
+        <div class="ALLIGNMENT7"><label for="Address">ADDRESS : </label>
+        <input id="SIZE7" type="text" name="Address" placeholder=" Type Your Address" required></div>
+        <br>
+        </br>
+        <button class="ALLIGNMENT8" onclick="Submit();Confirm();">SUBMIT</button>
+        <div id="f2" class="ALLIGNMENT12">
+            <h5 id="SIZE8">Important instrutions to see before creating a strong password</h5>
+            <div class="ALLIGNMENT13">
+            <ol>
+                <li id="LET1">Must contain atleast 8 characters</li>
+                <li>Must contain an uppercase word</li>
+                <li>Must contain an lowercase word</li>
+                <li>Must contain special characters</li>
+            </div>
+            </ol>
+            </div>
+        </div>
+    </form>
+    
